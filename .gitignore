@@ -1,0 +1,29 @@
+# Build output (regenerate with build.ps1)
+build/
+dist/
+*.exe
+*.pkg
+
+# Bundled third-party binaries (downloaded / verified by build.ps1 and tools/get_xray.ps1)
+xray/
+bundle/
+
+# Runtime data / caches
+__pycache__/
+*.pyc
+cached_servers.json
+active_connection/
+configs/*.ovpn
+*.log
+
+# Secrets - never commit
+settings.json
+state.json
+xray_*.json
+auth.txt
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
